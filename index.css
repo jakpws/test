@@ -35,7 +35,6 @@ body {
 
 /***** home *****/
 .frame-home {
-  border: 1px solid blue;
   max-width: 1100px;
   margin: auto;
   margin-top: 20px;
@@ -239,5 +238,6 @@ body {
     display: flex;
   }
 }
+
 
 /**END nav bar**/
