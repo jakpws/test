@@ -1,0 +1,290 @@
+body {
+  background-color: rgb(240, 240, 255);
+}
+
+.top-header {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+
+/**page product**/
+.frame-product-page {
+  border: 1px solid rgb(0, 0, 0);
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px #aaaaaa;
+  margin-top: 50px;
+}
+
+.breadcrumb {
+  color: rgb(0, 0, 0);
+  font-family: 'Kanit', sans-serif;
+  text-decoration: none;
+}
+
+.greater-than {
+  color: rgb(50, 50, 50);
+}
+
+.frame-product-img-recommend {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-img-product {
+  width: 500px;
+}
+
+.box-recommend-product {
+  width: 400px;
+  color: rgb(0, 0, 0);
+}
+
+.box-big-img {
+  max-width: 400px;
+  margin: auto;
+}
+
+.big-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box-name-price-number {
+  font-family: 'Kanit', sans-serif;
+}
+
+.name-product {
+  color: rgb(90, 90, 90);
+  margin-top: -8px;
+}
+
+.price-product {
+  margin-top: -20px;
+  color: rgb(0, 0, 0);
+}
+
+.number-product {
+  margin-top: -5px;
+  color: rgb(90, 90, 90);
+}
+
+.frame-details-product {
+  margin-top: 30px;
+}
+
+.box-text-details-product {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: -5px;
+  margin-top: -5px;
+  padding: 4px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.text-details-product {
+  margin: 3px;
+}
+
+.fa-exclamation {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2px;
+  width: 15px;
+  text-align: center;
+  border-radius: 100%;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.box-btn-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-buy  {
+  width: 200px;
+  height: 30px;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 10px;
+  cursor: pointer;   
+}
+
+.frame-note-product {
+  border: 1px solid black;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px #aaaaaa;
+  margin-top: 30px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-text-note {
+  border: 1px solid black;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+.text-note {
+  margin: 4px;
+  font-family: 'Kanit', sans-serif;
+}
+/**end page product**/
+
+
+
+
+
+
+
+
+
+
+/**nav bar**/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-family: 'Kanit', sans-serif;
+  margin: 8px;
+}
+
+.menu-item {
+  transition: 0.5s;
+}
+
+.menu-item:hover {
+  color: rgb(132, 0, 255);
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 94.5%;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/**END nav bar**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quantity-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.quantity-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #000000;
+  font-family: 'Kanit', sans-serif;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(132, 0, 255);
+  border-radius: 8px;
+  background: #faf9f2;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(132, 0, 255);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #aab1ff;
+}
+
+.number-box {
+  width: 60px;
+  height: 40px;
+  border: 1px solid rgb(132, 0, 255);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(132, 0, 255);
+  background: #fff;
+  font-family: 'Kanit', sans-serif;
+}

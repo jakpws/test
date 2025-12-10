@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!--Script-->
+  <script src="https://kit.fontawesome.com/b1036c605e.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="./web-product/image"></script>
+  <!--Script-->
+  <!--header-->
+  <header class="top-header">
+    <div class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+  
+      <div class="menu" id="menu">
+        <a href="index.html" class="menu-item">
+          <i class="fa-solid fa-house"></i>หน้าหลัก
+        </a>
+        <a href="product.html" class="menu-item">
+          <i class="fa-solid fa-shop"></i>สินค้าทั่วไป
+        </a>
+        <a href="contact.html" class="menu-item">
+          <i class="fa-solid fa-headphones"></i>ติดต่อเรา
+        </a>
+        <a href="login.html" class="menu-item">
+          <i class="fa-solid fa-user"></i>เข้าสู่ระบบ
+        </a>
+        <a href="new-user.html" class="menu-item">
+          <i class="fa-solid fa-user-plus"></i>สมัครสมาชิก
+        </a>
+      </div>
+    </div>
+  </header>
+  <!--end-header-->
+  <div class="frame-product-page">
+    <div class="box-breadcrumb">
+      <a class="breadcrumb" href="index.html">หน้าหลัก</a>
+      <a class="breadcrumb greater-than">></a>
+      <a class="breadcrumb" href="product.html">ROV ID</a>
+      <a class="breadcrumb greater-than">></a>
+      <a class="breadcrumb" href="test.html">noname</a>
+    </div>
+    <div class="frame-product-img-recommend">
+      <div class="box-img-product">
+        <div class="box-big-img">
+          <img class="big-img" src="C:\Users\asus\Desktop\jakpws2\web-product\image\1.png">
+        </div>
+      </div>
+      
+      <div class="box-recommend-product">
+        <div class="box-name-price-number">
+          <h2 class="name-product">NONAME</h2>
+          <h3 class="price-product">999฿ ต่อชิ้น</h3>
+          <h4 class="number-product">มีสินค้าทั้งหมด 135 ชิ้น</h4>
+        </div>
+
+        <div class="frame-details-product">
+          <div class="box-details-product">
+            <p class="details-produc">
+              <i class="fa-solid fa-exclamation"></i>รายละเอียดสินค้า
+            </p>
+          </div>
+
+          <div class="box-text-details-product">
+            <p class="text-details-product">- เกมจะเข้าไอดี steam ของลูกค้า</p>
+            <p class="text-details-product">- ติดตั้งและเล่นในไอดีตัวเองได้เลย</p>
+            <p class="text-details-product">- ไม่ต้องปรับออฟไลน์เล่น</p>
+          </div>
+        </div>
+        
+        <div class="quantity-container">
+          <span class="quantity-label">จำนวนสินค้า</span>
+          <div class="quantity-control">
+            <button class="btn" id="decrease">-</button>
+            <input type="text" id="quantity" class="number-box" value="1" readonly>
+            <button class="btn" id="increase">+</button>
+          </div>
+        </div>
+
+        <div class="box-btn-buy">
+          <button class="btn-buy">
+            <i class="fa-solid fa-cart-shopping"></i>สั่งซื้อ
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-note-product">
+    <div class="frame-note">
+      <div class="box-head-note">
+        <p class="head-note">
+          <i class="fa-solid fa-table-list"></i> ข้อมูลของสินค้า
+         </p>
+      </div>
+      <div class="box-text-note">
+        <p class="text-note">ชื่อสินค้า : NONAME</p>
+        <p class="text-note">จำนวนคงเหลือ : 27 ชิ้น</p>
+        <p class="text-note">ยอดขาย : 284 ชิ้น</p>
+        <p class="text-note">สร้างเมื่อ : วันที่ 13/08/2024 เวลา 01:46 น.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const decreaseBtn = document.getElementById("decrease");
+      const increaseBtn = document.getElementById("increase");
+      const quantityInput = document.getElementById("quantity");
+      let quantity = 1;
+      decreaseBtn.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+        }
+      });
+      increaseBtn.addEventListener("click", () => {
+        quantity++;
+        quantityInput.value = quantity;
+      }); 
+    </script>
+</body>
+</html>
