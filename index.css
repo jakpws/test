@@ -32,7 +32,6 @@ body {
 
 /**main-menu**/
 .main-menu {
-  border: 1px solid black;
   display: grid;
   justify-content: center;
   max-width: 1300px;
@@ -274,4 +273,5 @@ body {
 }
 
 /**END nav bar**/
+
 
